@@ -1,49 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i');
 html,body{
     overflow-x: hidden;
-    font-size: 30px;
+    font-family: Yantramanav,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    line-height: 1.8em;
+    color: #666;
+    text-transform: none;
 }
 .nopadding{
     margin: 0 0 0 0!important;
     padding: 0 0 0 0!important;
 }
-.well{
+.navbar{
     border-radius: 0;
-    border: transparent;
+    margin-bottom: 0;
 }
-.topMenu{
-    background-color: rgba(242,242,242,1);
-    border-bottom-color: #E3E3E3;
-    height: 50px;
-}
-ul.loginMenu{
+ul.bxslider h1{
     position: absolute;
-    right: 3%;
-    top: -.9em;
-    font-size: 20px;
+    top: 40%;
+    left: 10%;
+    color: #666;
+    font-size: 70px;
 }
-ul.loginMenu li a{
-    color: #000;
+ul.bxslider p{
+    position: absolute;
+    top: 59%;
+    left: 10.1%;
+    font-size: 30px;
 }
-.nav>li>a:focus, .nav>li>a:hover, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
-        background-color:transparent;
+ul.bxslider a.more{
+    border-radius: 0;
+    border-color: transparent;
+    position: absolute;
+    top: 70%;
+    left: 26.6%;
+    display: none
 }
-a.facebookLogin{
-    background: blue;
-    color: white;
+.service{
+    background: url(http://www.placehold.it/380x389);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    border-right: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+}
+.overlay{
+    background: rgba(242, 242, 242, 1);
+    width: 100%;
+    padding: 1em;
+    position: relative;
+    top: -1.678em;
+    left: -.8em;
+    width: 376px;
+    
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+}
+.service h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    background: rgba(0,0,0,.7);
     padding: 10px;
-    font-size: 13px;
-}
-a.facebookLogin:hover{
-    text-decoration: none;
-}
-img.logo{
-    z-index: 999;
-}
+    position: relative;
+    top: -20px;
+    left: -15px;
+    width: 376px;
+    color: #FFF;
 
-ul.menu{
-    position: absolute;
-    z-index: 9999;
-    top: -5em;
-    left: 12em;
-    font-size: 20px;
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+}
+.service p{
+    text-align: center;
+}
+.service:hover > h1{
+    background: rgba(0, 0, 0, 1);
+}
+.service:hover > .overlay{
+    background: rgba(242, 242, 242, 0);
+
+
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
 }
