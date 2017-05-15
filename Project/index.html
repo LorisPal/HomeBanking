@@ -12,6 +12,7 @@
 
     <!-- Custom CSS styles-->
     <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://use.fontawesome.com/5b17d01a6c.js"></script>
@@ -25,19 +26,97 @@
   </head>
   <body>
     <div class="container-fluid nopadding">
-        <nav class="">
+        <nav class="well topMenu">
             <div class="col-md-4">
-               
+               <img src="http://www.placehold.it/200x200" class="logo img-responsive"/>
             </div>
             <div class="col-md-8">
-
+               <ul class="nav navbar-nav navbar-right loginMenu">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i> <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" onclick="openLogin(); return false;">Login</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
             </div>
+            <div class="clearfix"></div>
+            <div class="col-md-8">
+               <ul class="menu list-inline">
+                  <li>Home</li>
+                  <li>Home</li>
+                  <li>Home</li>
+                  <li>Home</li>
+               </ul>
+            </div>
+            
         </nav>
+
+        <div class="col-md-12 nopadding slider">
+            <ul class="bxslider">
+              <li><img src="http://www.placehold.it/1980x700" /></li>
+              <li><img src="http://www.placehold.it/1980x700" /></li>
+              <li><img src="http://www.placehold.it/1980x700" /></li>
+            </ul>
+        </div>
     </div>
+    <div class="clearfix"></div>
+    
+
+
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="loginModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">LOGIN</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <a href="#" class="facebookLogin"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Accedi con Facebook</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function openLogin(){
+          $('#loginModal').modal('show');
+        }
+
+       $('.bxslider').bxSlider({
+          auto: true,
+          speed: 2500,
+          pager: false
+        });
+    </script>
+  
   </body>
 </html>
+
+

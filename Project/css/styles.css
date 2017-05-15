@@ -1,10 +1,49 @@
 html,body{
     overflow-x: hidden;
-    font-family: 'Times New Roman', serif;
     font-size: 30px;
 }
 .nopadding{
     margin: 0 0 0 0!important;
     padding: 0 0 0 0!important;
 }
+.well{
+    border-radius: 0;
+    border: transparent;
+}
+.topMenu{
+    background-color: rgba(242,242,242,1);
+    border-bottom-color: #E3E3E3;
+    height: 50px;
+}
+ul.loginMenu{
+    position: absolute;
+    right: 3%;
+    top: -.9em;
+    font-size: 20px;
+}
+ul.loginMenu li a{
+    color: #000;
+}
+.nav>li>a:focus, .nav>li>a:hover, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+        background-color:transparent;
+}
+a.facebookLogin{
+    background: blue;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+}
+a.facebookLogin:hover{
+    text-decoration: none;
+}
+img.logo{
+    z-index: 999;
+}
 
+ul.menu{
+    position: absolute;
+    z-index: 9999;
+    top: -5em;
+    left: 12em;
+    font-size: 20px;
+}
