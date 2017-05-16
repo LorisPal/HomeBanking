@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mirkoviviano/HomeBanking"
+    "url": "git+https://github.com/mirkoviviano/HomeBanking.git"
   },
-  "author": "",
+  "author": "Mirko Viviano",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mirkoviviano/HomeBanking/issue"
