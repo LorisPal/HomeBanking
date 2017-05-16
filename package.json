@@ -22,7 +22,8 @@
     "cors": "^2.8.3",
     "express": "^4.15.2",
     "mongoose": "^4.9.5",
-    "cookie-parser": "^1.4.3"
+    "cookie-parser": "^1.4.3",
+    "express-handlebars": "3.0.0"
   },
   "devDependencies": {
     "@angular/cli": "^1.0.3",
