@@ -1,6 +1,0 @@
-// package.json
-{
-  "name": "node-authentication",
-  "main": "js/server.js"  
-  }
-}
