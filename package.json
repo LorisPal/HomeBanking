@@ -21,7 +21,8 @@
     "body-parser": "^1.17.1",
     "cors": "^2.8.3",
     "express": "^4.15.2",
-    "mongoose": "^4.9.5"
+    "mongoose": "^4.9.5",
+    "cookie-parser": "^1.4.3"
   },
   "devDependencies": {
     "@angular/cli": "^1.0.3",
@@ -29,7 +30,6 @@
     "eslint": "^3.19.0",
     "frisby": "^0.8.5",
     "jasmine-core": "^2.6.1",
-    "cookie-parser": "^1.4.3",
     "karma": "^1.6.0",
     "karma-chrome-launcher": "^2.0.0",
     "karma-firefox-launcher": "^1.0.1",
