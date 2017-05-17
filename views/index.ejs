@@ -109,16 +109,16 @@
       <div class="container-fluid nopadding">
         <div class="col-md-12 nopadding">
             <ul class="bxslider">
-              <li><img src="http://www.placehold.it/2000x700" />
+              <li><img src="images/slider/slide1.jpg" />
                   <div class="slider-text"><h1>Slogan #1</h1>
                   <p>Subtitle</p>
               </li>
-              <li><img src="http://www.placehold.it/2000x700" />
-                  <div class="slider-text"><h1>Slogan #1</h1>
+              <li><img src="images/slider/slide2.jpg" />
+                  <div class="slider-text"><h1>Slogan #2</h1>
                   <p>Subtitle</p>
               </li>
-              <li><img src="http://www.placehold.it/2000x700" />
-                 <div class="slider-text"><h1>Slogan #1</h1>
+              <li><img src="images/slider/slide3.jpg" />
+                 <div class="slider-text"><h1>Slogan #3</h1>
                   <p>Subtitle</p>
               </li>
             </ul>
@@ -158,11 +158,10 @@
                 $(".slider-text.active-slide h1").addClass("animated bounceInUp");
                 $(".slider-text.active-slide p").addClass("animated bounceInDown");     
             },
-            /*onSlideBefore: function () {
-                $(".slider-text.active-slide").removeClass("animated bounceInUp");
-                $(".one.slider-text.active-slide").removeAttr('style');
-
-            }*/
+            onSlideBefore: function () {
+                $(".slider-text.active-slide h1").removeClass("animated bounceInUp");
+                $(".slider-text.active-slide p").removeClass("animated bounceInDown");  
+            }
         });
       </script>
   </body>  

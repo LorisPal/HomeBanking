@@ -51,7 +51,7 @@ ul.bxslider h1{
     position: absolute;
     top: 40%;
     left: 10%;
-    color: #666;
+    color: #FFF;
     font-size: 70px;
 }
 ul.bxslider p{
@@ -59,6 +59,7 @@ ul.bxslider p{
     top: 59%;
     left: 10.1%;
     font-size: 30px;
+    color: #FFF;
 }
 ul.bxslider a.more{
     border-radius: 0;
@@ -155,10 +156,11 @@ ul.bxslider a.more{
 }
 ul.homeIcons{
     margin: 0;
+    color: #F2F2F2;
 }
 ul.homeIcons span{
     font-size: 50px;
-    color: #777;
+    color: #F2F2F2;
 }
 ul.homeIcons li i.icon{
     font-size: 40px;
@@ -196,7 +198,7 @@ a.borderedButton{
 a.borderedButton:hover{
     background: var(--default-website-color);
     color: #FFF!important;
-    
+
     transition: all .6s;
     -webkit-transition: all .6s;
     -moz-transition: all .6s;

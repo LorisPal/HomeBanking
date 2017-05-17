@@ -169,3 +169,9 @@ ul.bxslider {
   font-size: .85em;
   padding: 10px;
 }
+
+ul.bxslider li img{
+  filter: brightness(50%);
+  -moz-filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
