@@ -188,8 +188,19 @@ ul.homeIcons li{
 a.borderedButton{
     padding: 5px; 
     border: 2px solid var(--default-website-color);
+    
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
 }
-
+a.borderedButton:hover{
+    background: var(--default-website-color);
+    color: #FFF!important;
+    
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+}
 .slider-text {
     visibility:hidden;
 }
