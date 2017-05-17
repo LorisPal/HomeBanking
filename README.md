@@ -9,4 +9,5 @@
 
 # Deploy on Heroku
 L'app viene deployata in automatico con questo branch. 
-[link] https://unicam-homebanking.herokuapp.com/
+<br/>
+URL: https://unicam-homebanking.herokuapp.com/
