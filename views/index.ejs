@@ -62,10 +62,12 @@
             </div>
             <div class="col-md-8 menuz">
                 <ul class="list-inline">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Home</a></li>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Servizi</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contatti</a></li>
+                    <li class="alignRight"><a href="" class="borderedButton">Something</a></li>
                 </ul>
             </div>
         </div>
@@ -108,17 +110,16 @@
         <div class="col-md-12 nopadding">
             <ul class="bxslider">
               <li><img src="http://www.placehold.it/2000x700" />
-                  <h1 class="animated bounce">Slogan #1</h1>
-                  <p class="animated bounceInDown">Subtitle</p>
-                  <a href="#" class="animate bounceInRight more btn btn-danger btn-lg">Read</a>
+                  <div class="slider-text"><h1>Slogan #1</h1>
+                  <p>Subtitle</p>
               </li>
               <li><img src="http://www.placehold.it/2000x700" />
-                  <h1>Slogan #2</h1>
-                  <p class="animated bounceInDown">Subtitle</p>
+                  <div class="slider-text"><h1>Slogan #1</h1>
+                  <p>Subtitle</p>
               </li>
               <li><img src="http://www.placehold.it/2000x700" />
-                  <h1>Slogan #3</h1>
-                  <p class="animated bounceInDown">Subtitle</p>
+                 <div class="slider-text"><h1>Slogan #1</h1>
+                  <p>Subtitle</p>
               </li>
             </ul>
         </div>
@@ -137,11 +138,31 @@
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
       <script>
         $('.bxslider').bxSlider({
-          auto: true,
-          autoControls: false,
-          controls: true,
-          pager: false, 
-          caption: true
+            auto: true,
+            preloadImages: 'all',
+            mode: 'horizontal',
+            captions: false,
+            controls: true,
+            pager: false,
+            pause: 5000,
+            speed: 800,
+            onSliderLoad: function () {
+                $('.bxslider>li .slider-text').eq(1).addClass('active-slide');
+                $(".slider-text.active-slide h1").addClass("animated bounceInUp");
+                $(".slider-text.active-slide p").addClass("animated bounceInDown");
+            },
+            onSlideAfter: function (currentSlideNumber, totalSlideQty, currentSlideHtmlObject) {
+                console.log(currentSlideHtmlObject);
+                $('.active-slide').removeClass('active-slide');
+                $('.bxslider>li .slider-text').eq(currentSlideHtmlObject + 1).addClass('active-slide');
+                $(".slider-text.active-slide h1").addClass("animated bounceInUp");
+                $(".slider-text.active-slide p").addClass("animated bounceInDown");     
+            },
+            /*onSlideBefore: function () {
+                $(".slider-text.active-slide").removeClass("animated bounceInUp");
+                $(".one.slider-text.active-slide").removeAttr('style');
+
+            }*/
         });
       </script>
   </body>  

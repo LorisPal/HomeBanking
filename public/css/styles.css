@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i');
 @import url('https://fonts.googleapis.com/css?family=Yantramanav');
+:root{
+    --default-website-color: green;
+}
 html,body{
     overflow-x: hidden;
     font-family: Yantramanav,Helvetica,Arial,sans-serif;
@@ -9,7 +12,7 @@ html,body{
     text-transform: none;
 }
 a{
-    color: green;
+    color: var(--default-website-color);
 }
 .nopadding{
     margin: 0 0 0 0!important;
@@ -147,8 +150,8 @@ ul.bxslider a.more{
     color: #000;
     margin: 10px 20px;
 }
-.menuz ul li a:hover{
-    color: blue;
+.menuz ul li a:hover, .menuz ul li a.active{
+    color:  var(--default-website-color);
 }
 ul.homeIcons{
     margin: 0;
@@ -177,8 +180,19 @@ ul.homeIcons li{
     display: inline-block;
     font-size: 19px;
     line-height: 1;
-    color: green;
+    color:  var(--default-website-color);
 }
 .alignRight{
     float: right;
+}
+a.borderedButton{
+    padding: 5px; 
+    border: 2px solid var(--default-website-color);
+}
+
+.slider-text {
+    visibility:hidden;
+}
+.slider-text.active-slide {
+    visibility: visible;
 }
