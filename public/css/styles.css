@@ -82,7 +82,7 @@ ul.bxslider a.more{
     font-size: 36px;
 }
 .service{
-    background: url(http://www.placehold.it/400x400);
+    background: url(../images/service3.jpg);
     background-size: cover; 
     height: 400px; 
     border-right: 3px solid white; 
@@ -115,7 +115,9 @@ ul.bxslider a.more{
     text-align: center;
     margin: 0 auto;
     position: absolute;
-    top: 3em;
+    top: 3.2em;
+    background: rgba(255, 255, 255, 0.5);
+    height: 100%;
 }
 .textService h1{
     text-align: center;
