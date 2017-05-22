@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom CSS styles-->
+    <link rel="stylesheet" href="css/Login.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
@@ -97,7 +98,44 @@
                     <span class="ion-person"></span>
                     <div class="homeIconText">
                         <div class="headingIcon">
-                            <p><a href="#">Accedi</a> alla tua area personale.<br/><a hre="#">Registrati</a>&nbsp;|&nbsp;<a href="#">Password dimenticata</a></p>
+                            <p><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Accedi</a> alla tua area personale.<br/><a hre="#">Registrati</a>&nbsp;|&nbsp;<a href="#">Password dimenticata</a></p>
+                                <div id="id01" class="modal">
+  
+                                        <form class="modal-content animate" action="/action_page.php">
+                                        <div class="imgcontainer">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                        <li><img src="images/Login.png" />
+                                        </div>
+
+                                        <div class="container">
+                                        <label><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                        <label><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <button type="submit">Login</button>
+                                        <input type="checkbox" checked="checked"> Remember me
+                                        </div>
+
+                                        <div class="container" style="background-color:#f1f1f1">
+                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password?</a></span>
+                                        </div>
+                                        </form>
+                                        </div>
+
+                                        <script>
+                                        // Get the modal
+                                        var modal = document.getElementById('id01');
+
+                                        // When the user clicks anywhere outside of the modal, close it
+                                        window.onclick = function(event) {
+                                        if (event.target == modal) {
+                                        modal.style.display = "none";
+                                        }
+                                        }
+                                        </script>
                         </div>
                     </div>
                 </li>
