@@ -235,3 +235,6 @@ form.contactForm input.sendEmail{
     color: #FFF;
     text-align: center;
 }
+.nav>li>a:focus, .nav>li>a:hover{
+    color: var(--default-website-color); 
+}
