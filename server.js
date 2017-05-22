@@ -11,6 +11,8 @@ app.set('view engine', 'ejs');
 // make express look in the public directory for assets (css/js/img)
 app.use(express.static(__dirname + '/public'));
 
+// 
+
 // set the home page route
 app.get('/', function(req, res) {
 	// ejs render automatically looks in the views folder
@@ -21,8 +23,19 @@ app.get('/about', function(req, res) {
 	res.render('about');
 });
 
-app.listen(port, function() {
-	console.log('Our app is running on http://localhost:' + port);
+app.get('/services', function(req, res){
+	res.render('services');
 });
 
+app.get('/news', function(req, res){
+	res.render('news');
+});
+
+app.get('/contatti', function(req, res){
+	res.render('contatti');
+});
+
+app.listen(port, function() {
+	console.log('UniBank is running on http://localhost:' + port);
+});
 
