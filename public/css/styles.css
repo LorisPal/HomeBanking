@@ -14,6 +14,15 @@ html,body{
 a{
     color: var(--default-website-color);
 }
+input.form-control{
+    border-radius: 0;
+}
+input.form-control:focus{
+    border-color: var(--default-website-color);
+}
+.btn{
+    border-radius: 0;
+} 
 .nopadding{
     margin: 0 0 0 0!important;
     padding: 0 0 0 0!important;
@@ -69,58 +78,65 @@ ul.bxslider a.more{
     left: 26.6%;
     display: none
 }
+.services h1{
+    font-size: 36px;
+}
 .service{
-    background: url(http://www.placehold.it/380x389);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
-    border-right: 2px solid #FFF;
-    border-left: 2px solid #FFF;
+    background: url(http://www.placehold.it/400x400);
+    background-size: cover; 
+    height: 400px; 
+    border-right: 3px solid white; 
+    border-left: 3px solid white; 
 }
-.overlay{
-    background: rgba(242, 242, 242, 1);
+.textService{
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
     width: 100%;
-    padding: 1em;
-    position: relative;
-    top: -1.678em;
-    left: -.8em;
-    width: 376px;
+    height: 100%;
+    left: 0;
     
-    transition: all .6s;
-    -webkit-transition: all .6s;
-    -moz-transition: all .6s;
+    /*-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.10);*/
+
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
 }
-.service h1{
-    text-transform: uppercase;
+.service:hover > .textService{
+    background: rgba(255, 255, 255, 0);
+
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+}
+.textService p{
+    padding: 1em;
     text-align: center;
-    font-size: 30px;
-    background: rgba(0,0,0,.7);
-    padding: 10px;
-    position: relative;
-    top: -20px;
-    left: -15px;
-    width: 376px;
-    color: #FFF;
+    margin: 0 auto;
+    position: absolute;
+    top: 3em;
+}
+.textService h1{
+    text-align: center;
     opacity: 0;
-
-    transition: all .6s;
-    -webkit-transition: all .6s;
-    -moz-transition: all .6s;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    background: rgba(137, 198, 67, .7);
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
 }
-.service p{
-    text-align: center;
-}
-.service:hover > .service h1{
-    background: rgba(0, 0, 0, 1);
+.service:hover > .textService h1{
     opacity: 1;
-}
-.service:hover > .overlay{
-    background: rgba(242, 242, 242, 0);
 
-
-    transition: all .6s;
-    -webkit-transition: all .6s;
-    -moz-transition: all .6s;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
 }
 .row-md-center {
     -webkit-box-align: center;
@@ -234,6 +250,10 @@ form.contactForm input.sendEmail{
 .footer h1{
     color: #FFF;
     text-align: center;
+}
+.footer p{
+    font-size: 15px;
+    text-align: justify;
 }
 .nav>li>a:focus, .nav>li>a:hover{
     color: var(--default-website-color); 
