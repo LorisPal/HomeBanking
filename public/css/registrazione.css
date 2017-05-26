@@ -1,0 +1,28 @@
+
+:root{
+    --default-website-color: green;
+}
+
+input.a {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--default-website-color);
+    box-sizing: border-box;
+    color: black;
+    border-radius: 5px;
+}
+
+label{
+    color: var(--default-website-color);
+}
+
+.button {
+    color: white;
+    width: 20%;
+    height: 10%;
+    font-size: 110%;
+    background-color: green;
+    border-radius: 5px;
+}
