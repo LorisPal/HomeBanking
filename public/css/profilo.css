@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root{
+    --default-website-color: green;
+}
+html,body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.8em;
+    color: #666;
+    text-transform: none;
+    height: 100%;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+h4{
+    font-weight: 700;
+}
+a{
+    color: var(--default-website-color);
+}
+.profilo h1{
+    margin: 0;
+}
+.userMenu p, .userMenu p a{
+    color: #FFF;
+    font-size: 17px;
+    line-height: 1.9em;
+    font-family: Yantramanav,Helvetica,Arial,sans-serif;
+    margin: 4px;
+}
+.navbar-inverse{
+    background-color: var(--default-website-color);
+    color: #FFF;
+}
+.navbar-inverse .profilo li{
+    border-color: transparent;
+    color: #FFF;
+}
+.menuProfilo{
+    flex: 0 0 270px;
+    padding: 15px;
+    background: #F5F7F9;
+    border-right: 1px solid #DDD;
+    position: fixed;
+    left: 0;
+    height: 100%;
+}
+.menuProfilo ul{
+    margin-left: 1.5em;
+}
+.menuProfilo ul li{
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+.menuProfilo ul li span{
+    font-size: 1.7em;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.menuProfilo ul li a{
+    color: #757575;
+        font-size: .7em;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.menuProfilo ul li a:hover, .menuProfilo ul li a.active{
+    background-color: transparent;
+    color: var(--default-website-color);
+    text-decoration: none;
+}
+ul.footerProfilo{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    bottom: -10em;
+}
+ul.footerProfilo li{
+    font-size: .7em;
+    margin: 0;
+    line-height: 1.8;
+}
+.stats{
+    position: fixed;
+    right: 0;
+}
+.stats small.visualizza{
+    line-height: .5;
+    position: relative;
+    top: -1em;
+}
+a.ops{
+    width: 90%;
+}
+a.ops span{
+    margin-right: 1em;
+}
+.operazioni{
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 1em;
+}
+.movimento ul li{
+    font-size: 13px; 
+    border-bottom: 1px solid #d2ced0;
+}
+.movimento ul li span{
+    font-size: 19px;
+    vertical-align: middle;
+}
+.movimento ul li .data, .movimento ul li .oggetto{
+    font-size: 13px;
+}
+span.right{
+    float:right;
+}

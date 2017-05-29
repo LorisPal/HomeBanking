@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>UniBank - Profilo</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom CSS styles-->
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/profilo.css"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://use.fontawesome.com/5b17d01a6c.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-app="demo">
+      <div class="container-fluid nopadding">
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid nopadding">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse profilo" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><h1>UniBank</h1></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right userMenu">
+                <li><p>Ciao, Mirko Viviano.</p></li>
+                <li><p><a href="#">Logout</a></p></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+          </nav>
+      </div>
+
+      <div class="container-fluid nopadding">
+          <div class="col-md-2 menuProfilo">
+            <ul class="list-unstyled">
+                <li><span class="ion-ios-home-outline"></span><a href="profilo" class="active">HOME</a></li>
+                <li><span class="ion-ios-list-outline"></span><a href="profilo/movimenti">MOVIMENTI</a></li>
+                <li><span class="ion-lock-combination"></span><a href="profilo/sicurezza">SICUREZZA</a></li>
+                <li><span class="ion-gear-b"></span><a href="profilo/settings">IMPOSTAZIONI</a></li>
+            </ul>
+            <ul class="list-inline footerProfilo">
+                <li><a href="privacy-policy">Privacy Policy</a></li>
+                <li><a href="about">Informazioni</a></li>
+                <li>Copyright &copy; 2017 - Tutti i diritti riservati</li>
+            </ul>
+          </div>
+          <div class="col-md-10 stats">
+              <div class="col-md-12 operazioni">
+                  <div class="col-md-9">
+                    <h1>OPERAZIONI</h1>
+                    <div class="col-md-6 nopadding">
+                      <ul class="list-inline">
+                        <div class="col-md-6 nopadding"><li>
+                          <a href="#" class="ops btn btn-default"><span class="ion-arrow-up-c"></span>Invia</a></li></div>
+                        <div class="col-md-6 nopadding"><li><a href="#" class="ops btn btn-default"><span class="ion-arrow-down-c"></span>Ricevi</a></li></div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                      <h1><small>Saldo</small><br/>€3,048,765.00</h1>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-12">
+               
+              </div>
+          </div>
+      </div>
+

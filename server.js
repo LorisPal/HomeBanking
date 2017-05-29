@@ -35,6 +35,10 @@ app.get('/contatti', function(req, res){
 	res.render('contatti');
 });
 
+app.get('/profilo', function(req, res){
+	res.render('profilo');
+});
+
 app.get('/registrazione', function(req, res){
 	res.render('registrazione');
 });
@@ -42,6 +46,12 @@ app.get('/registrazione', function(req, res){
 app.get('/recuperopass', function(req, res){
 	res.render('recuperopass');
 });
+
+app.get('/profilo/movimenti', function(req, res){
+	res.render('movimenti');
+});
+
+//Aggiungere sicurezza, settings, privacy-policy
 
 app.listen(port, function() {
 	console.log('UniBank is running on http://localhost:' + port);
