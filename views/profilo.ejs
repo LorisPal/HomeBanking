@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html ng-app="profilo">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,14 +17,10 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    
     <script src="https://use.fontawesome.com/5b17d01a6c.js"></script>
     
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Latest compiled and minified JavaScript -->
+
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -34,7 +30,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body ng-app="demo">
+  <body>
       <div class="container-fluid nopadding">
         <nav class="navbar navbar-inverse">
           <div class="container-fluid nopadding">
@@ -88,14 +84,44 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="col-md-3">
-                      <h1><small>Saldo</small><br/>€3,048,765.00</h1>
+                  <div class="col-md-3" ng-controller="saldo">
+                      <h1><small>Saldo</small>
+                      <br/>€ {{saldoDisponibile}}</h1>
                   </div>
               </div>
               <div class="clearfix"></div>
               <div class="col-md-12">
-               
+                  <div class="col-md-6 attivitaRecenti" ng-controller="ultimeAttivita">
+                      <div class="col-md-6"><h4>Attività recenti</h4></div>
+                      <div class="col-md-6"><small class="alignRight"><h4><a href="movimenti" alt="Vedi tutto">Vedi tutto</a></h4></small></div>
+                      <table class="table table-hover">
+                        <tr ng-repeat="att in attivita">
+                          <td>{{att.data}}</td>
+                          <td class="prezzo {{att.pagato}}">€ {{att.importo}}</td>
+                          <td style="text-align:center;"><a href="{{att.link}}" alt="Vedi">Vedi</a></td>
+                        </tr>
+                      </table>
+                  </div>
+                  <div class="col-md-6 attivitaRecenti" ng-controller="inviaBonifico">
+                     <h4>Bonifico</h4>
+                     <form class="form-inline" method="post" action="#">
+                          <div class="form-group">
+                            <label class="sr-only" for="IBAN">IBAN</label>
+                            <div class="nopadding col-sm-12">
+                              <input type="text" class="form-control" id="IBAN" placeholder="IBAN">
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-info">Invia</button>
+                     </form>
+                  </div>
               </div>
           </div>
       </div>
 
+
+
+
+
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>

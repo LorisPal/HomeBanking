@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 :root{
-    --default-website-color: green;
+    --default-website-color: #004A7C;
 }
 html,body{
     overflow-x: hidden;
@@ -123,4 +123,31 @@ a.ops span{
 }
 span.right{
     float:right;
+}
+.attivitaRecenti{
+    margin-top: 2em;
+}
+.attivitaRecenti small h4 a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.attivitaRecenti table tr{
+    font-size: 14px;
+}
+.attivitaRecenti table tr td.prezzo.ricevuto{
+    color: green;
+}
+.attivitaRecenti table tr td.prezzo.pagato{
+    color: red;
+}
+label{
+    font-size: 13px;
+}
+.btn-info{
+    background-color: var(--default-website-color);
+    border-color: var(--default-website-color);
+}
+form.form.inline input{
+    width:100%;
 }
